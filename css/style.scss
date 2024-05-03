@@ -116,7 +116,7 @@ table {
                         align-items: center;
                         justify-content: center;
                         color: white;
-                        background: rgb(164, 15, 30);
+                        background:brown;
                         border: 3px solid white;
 
                         p{
@@ -126,7 +126,7 @@ table {
                 }
             }
             .right{
-                background: white;
+                
                 display: flex;
                 flex-direction: column;
                 gap: 1rem;
@@ -159,7 +159,7 @@ table {
 
 .chido{
     .container{
-        background: maroon;
+        background: brown;
 
         .div{
             display: flex;
@@ -172,13 +172,15 @@ table {
 
 }
 .images{
+    padding: 2rem 0;
+
  .container{
     .row{color: white;
       .left{
         
         background-color: brown;
         color: white;
-        padding: 6vh;
+        padding: 1%;
       
         
         
@@ -190,6 +192,7 @@ table {
 .imgz{
     display: flex;
     flex-direction: row;
+    
 .photo1{
         background-image: url("../images/landing/project\ 1.jpg");
         width: 55%;
@@ -200,6 +203,7 @@ table {
         border: 2px solid brown;
         display: flex;
         align-items: last baseline;
+        padding: 20px;
         
     }
     .photo2{
@@ -212,6 +216,7 @@ table {
         border: 2px solid brown;
         display: flex;
         align-items: last baseline;
+        padding: 20px;
     }
     .photo3{
         background-image: url("../images/landing/project\ 3.jpg");
@@ -222,6 +227,7 @@ table {
         background-size: cover;
         border: 2px solid brown;
         display: flex;
+        padding: 20px;
         align-items: last baseline;
     
     }
@@ -235,6 +241,7 @@ table {
         border: 2px solid brown;
         display: flex;
         align-items: last baseline;
+        padding: 20px;
     }
     .photo5{
         background-image: url("../images/landing/project\ 5.jpg");
@@ -246,6 +253,7 @@ table {
         border: 2px solid brown;
         display: flex;
         align-items: last baseline;
+        padding: 20px;
     }
     .photo6{
         background-image: url("../images/landing/project\ 6.jpg");
@@ -257,11 +265,14 @@ table {
         border: 2px solid brown;
         display: flex;
         align-items: last baseline;
+        padding: 20px;
+        
     }
 }
 .donate{
     .background{
         height: 80hv;
+        // padding-bottom: 13rem;
         background-image: url("../images/landing/donate.jpg");
         background-position: center;
         background-size: cover;
@@ -271,11 +282,12 @@ table {
         
             height: 100;
             width: 100%;
-            padding: 50px;
+            padding: 100px;
             .row{
                 .btr{
                     display: flex;
                     flex-direction: row;
+                    gap: 10px;
                 }
                           }
         }
@@ -285,17 +297,20 @@ table {
         }
         form{
             input{
-                width: 80%;
+                height: 100%;
+                width: 100%;
                 background-color: transparent;
-                border: px solid white;
+                padding: 10px 40px;
+                border: 2px solid white;
                 color: #fff;
+                
                 
                 }
             }
             button{
                 background: brown;
                 color: white;
-                padding: 10px 15px;
+                padding: 10px 20px;
                 border: none;
             }
     }
@@ -312,8 +327,119 @@ table {
      }
 
 }
-.footer{background-color: brown;
-    
+
+#footer{
+    height: 50vh;
+    background: brown;
+    padding: 10px 80px;
+    margin-top: 2rem;
+    color:white;
+    .container{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        .row{
+            display: flex;
+            .left{
+                .sentence{
+                    width: 70%;
+                    p{
+                        color: grey;
+                    }
+                }
+
+                .text{
+                    display: flex;
+                    font-weight: 600;
+                    gap: 10px;
+
+                    .bots-container{
+                        display: flex;
+                        gap: 10px;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+
+                    }
+                    .bots{
+                        
+                        margin-top: -10px;
+                        color: white;
+                        height: 15px;
+                        width: 15px;
+                        border-color: black;
+                        border: 5px solid white;
+                        border-radius: 50%;
+                          
+                        p{
+                            bottom: 100px;
+                            
+                        }
+                        
+
+                    }
+                }
+            }
+        }
+        
+    }
+}
+.footer{
+    background-color: brown;
+    padding: 30px;
+    color: white;
+    margin-top: 30px;
+    .vashiko{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        .circle{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            .first{
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                .dot{
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background-color: black;
+                    border: 3px white solid;
+                }
+            }
+        }
+    }
+    .chido{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        ul{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+    }
+    .mhere{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        span{
+            text-decoration: underline;
+        }
+        .images{
+            display: flex;
+            gap: 10px;
+            img{
+                width: 8rem;
+                height: 6rem;
+            }
+        }
+    }
+
 }
 
    
@@ -410,7 +536,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
                             font-weight: 500;
                             font-size: 20px;
                             text-decoration: none;
-                            color: black;
+                             color: brown;
 
                             img{
                                 height: 2rem;

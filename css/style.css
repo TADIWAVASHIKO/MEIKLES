@@ -109,14 +109,13 @@ table {
   align-items: center;
   justify-content: center;
   color: white;
-  background: rgb(164, 15, 30);
+  background: brown;
   border: 3px solid white;
 }
 #why .container .row .left .whyCards .card p {
   font-weight: 500;
 }
 #why .container .row .right {
-  background: white;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -142,7 +141,7 @@ table {
 }
 
 .chido .container {
-  background: maroon;
+  background: brown;
 }
 .chido .container .div {
   display: flex;
@@ -150,13 +149,16 @@ table {
   flex-direction: row;
 }
 
+.images {
+  padding: 2rem 0;
+}
 .images .container .row {
   color: white;
 }
 .images .container .row .left {
   background-color: brown;
   color: white;
-  padding: 6vh;
+  padding: 1%;
 }
 
 .imgz {
@@ -173,6 +175,7 @@ table {
   border: 2px solid brown;
   display: flex;
   align-items: last baseline;
+  padding: 20px;
 }
 .imgz .photo2 {
   background-image: url("../images/landing/project 2.jpg");
@@ -184,6 +187,7 @@ table {
   border: 2px solid brown;
   display: flex;
   align-items: last baseline;
+  padding: 20px;
 }
 .imgz .photo3 {
   background-image: url("../images/landing/project 3.jpg");
@@ -194,6 +198,7 @@ table {
   background-size: cover;
   border: 2px solid brown;
   display: flex;
+  padding: 20px;
   align-items: last baseline;
 }
 .imgz .photo4 {
@@ -206,6 +211,7 @@ table {
   border: 2px solid brown;
   display: flex;
   align-items: last baseline;
+  padding: 20px;
 }
 .imgz .photo5 {
   background-image: url("../images/landing/project 5.jpg");
@@ -217,6 +223,7 @@ table {
   border: 2px solid brown;
   display: flex;
   align-items: last baseline;
+  padding: 20px;
 }
 .imgz .photo6 {
   background-image: url("../images/landing/project 6.jpg");
@@ -228,6 +235,7 @@ table {
   border: 2px solid brown;
   display: flex;
   align-items: last baseline;
+  padding: 20px;
 }
 
 .donate .background {
@@ -240,26 +248,29 @@ table {
 .donate .background .overlay {
   height: 100;
   width: 100%;
-  padding: 50px;
+  padding: 100px;
 }
 .donate .background .overlay .row .btr {
   display: flex;
   flex-direction: row;
+  gap: 10px;
 }
 .donate .background h3 {
   color: white;
   padding-bottom: 70px;
 }
 .donate .background form input {
-  width: 80%;
+  height: 100%;
+  width: 100%;
   background-color: transparent;
-  border: px solid white;
+  padding: 10px 40px;
+  border: 2px solid white;
   color: #fff;
 }
 .donate .background button {
   background: brown;
   color: white;
-  padding: 10px 15px;
+  padding: 10px 20px;
   border: none;
 }
 
@@ -274,8 +285,107 @@ table {
   margin: 5%;
 }
 
+#footer {
+  height: 50vh;
+  background: brown;
+  padding: 10px 80px;
+  margin-top: 2rem;
+  color: white;
+}
+#footer .container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+#footer .container .row {
+  display: flex;
+}
+#footer .container .row .left .sentence {
+  width: 70%;
+}
+#footer .container .row .left .sentence p {
+  color: grey;
+}
+#footer .container .row .left .text {
+  display: flex;
+  font-weight: 600;
+  gap: 10px;
+}
+#footer .container .row .left .text .bots-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#footer .container .row .left .text .bots {
+  margin-top: -10px;
+  color: white;
+  height: 15px;
+  width: 15px;
+  border-color: black;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+#footer .container .row .left .text .bots p {
+  bottom: 100px;
+}
+
 .footer {
   background-color: brown;
+  padding: 30px;
+  color: white;
+  margin-top: 30px;
+}
+.footer .vashiko {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.footer .vashiko .circle {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.footer .vashiko .circle .first {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.footer .vashiko .circle .first .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+  border: 3px white solid;
+}
+.footer .chido {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer .chido ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer .mhere {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer .mhere span {
+  text-decoration: underline;
+}
+.footer .mhere .images {
+  display: flex;
+  gap: 10px;
+}
+.footer .mhere .images img {
+  width: 8rem;
+  height: 6rem;
 }
 
 /*
@@ -345,7 +455,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     font-weight: 500;
     font-size: 20px;
     text-decoration: none;
-    color: black;
+    color: brown;
   }
   #banner .container .pc-nav .center ul a img {
     height: 2rem;
